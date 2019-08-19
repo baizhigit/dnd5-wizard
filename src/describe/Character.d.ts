@@ -9,10 +9,9 @@ interface AbilityScores {
 
 interface Character {
   name: string;
-  class: string;
+  mainClass: string;
+  subClass: string;
   race: string;
-  background: string;
-  alignment?: string;
   stats: AbilityScores;
   proficiencies: string[];
 }

@@ -1,20 +1,13 @@
 import React from 'react';
-import axios from 'axios';
+import { Wizard } from './components/Wizard';
 
-export class App extends React.Component {
-  async componentDidMount() {
-    const { data } = await axios.get('/spells/1/');
-    console.log(data);
-  }
-
-  render() {
-    return (
-      <>
-        <h1 className="app-header">{'D&D Wizard'}</h1>
-        <main className="app-container">
-          <article className="wizard">wizard works</article>
-        </main>
-      </>
-    );
-  }
-}
+export const App: React.SFC<{}> = () => (
+  <>
+    <h1 className="app-header">{'D&D Wizard'}</h1>
+    <main className="app-container">
+      <article className="wizard">
+        <Wizard />
+      </article>
+    </main>
+  </>
+);
