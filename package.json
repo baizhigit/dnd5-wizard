@@ -42,7 +42,7 @@
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.8.5",
     "@types/yup": "^0.26.22",
-    "node-sass": "^4.12.0"
+    "node-sass": "^7.0.0"
   },
   "proxy": "http://www.dnd5eapi.co/api"
 }
